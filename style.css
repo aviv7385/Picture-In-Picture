@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.button-container {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: inset 0px 20px 10px -15px rgba(255, 255, 255, 0.7);
+}
+
+button {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 2px 5px black;
+    cursor: pointer;
+    outline: none;
+    width: 120px;
+    height: 75px;
+    background: linear-gradient(to top, #696969, #e0dcd1);
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: inset 0px 20px 10px -15px rgba(255, 255, 255, 0.4),0 12px 12px 0px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #696969, #e0dcd1);
+}
+
+/* when pressing the button - move it 3px down */
+button:active {
+    transform: translateY(3px); 
+    box-shadow: 0 6px 6px 0px rgba(0,0,0,0.3);
+}
